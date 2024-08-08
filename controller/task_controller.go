@@ -1,13 +1,13 @@
 package controller
 
 import (
-	"github.com/labstack/echo"
 	"go-rest-api/model"
 	"go-rest-api/usecase"
 	"net/http"
 	"strconv"
 
 	"github.com/golang-jwt/jwt/v4"
+	"github.com/labstack/echo/v4"
 )
 
 type ITaskController interface {

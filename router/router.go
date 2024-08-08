@@ -1,12 +1,12 @@
 package router
 
 import (
-	"github.com/labstack/echo"
 	"go-rest-api/controller"
 	"net/http"
 	"os"
 
 	echojwt "github.com/labstack/echo-jwt/v4"
+	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
 

@@ -1,8 +1,6 @@
 package model
 
-import (
-	"time"
-)
+import "time"
 
 type User struct {
 	ID        uint      `json:"id" gorm:"primaryKey"`
@@ -12,7 +10,6 @@ type User struct {
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
-// UserResponse クライアントにレスポンスする際のデータ型
 type UserResponse struct {
 	ID    uint   `json:"id" gorm:"primaryKey"`
 	Email string `json:"email" gorm:"unique"`
